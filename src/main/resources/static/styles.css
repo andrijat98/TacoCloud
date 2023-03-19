@@ -1,5 +1,11 @@
+h1 {
+    text-align: center;
+}
+
 img {
+    display: block;
     height: 150px;
+    margin: 0 auto;
 }
 .grid {
     display: grid;
