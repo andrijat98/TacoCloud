@@ -1,0 +1,9 @@
+img {
+    height: 150px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: lightgray;
+    padding: 10px;
+}
