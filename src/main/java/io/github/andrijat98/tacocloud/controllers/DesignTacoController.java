@@ -4,7 +4,6 @@ import io.github.andrijat98.tacocloud.domains.Ingredient.Type;
 import io.github.andrijat98.tacocloud.domains.Ingredient;
 import io.github.andrijat98.tacocloud.domains.Taco;
 import io.github.andrijat98.tacocloud.domains.TacoOrder;
-import io.github.andrijat98.tacocloud.domains.TacoUDT;
 import io.github.andrijat98.tacocloud.repos.IngredientRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -62,7 +61,7 @@ public class DesignTacoController {
     }
 
     @PostMapping
-    public String processTaco (@Valid TacoUDT taco, Errors errors, @ModelAttribute TacoOrder tacoOrder) {
+    public String processTaco (@Valid Taco taco, Errors errors, @ModelAttribute TacoOrder tacoOrder) {
 
         if(errors.hasErrors()) {
             return "design";
